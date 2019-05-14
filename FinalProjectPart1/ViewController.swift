@@ -23,14 +23,14 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBAction func buttonHandlerSendEmail(_ sender: Any) {
         let mailComposeViewController = configureMailComposer()
         let mailComposeVC = MFMailComposeViewController()
+//        mailComposeVC.mailComposeDelegate = self
+//        mailComposeVC.setToRecipients([self.textFieldTo.text!])
+//        mailComposeVC.setSubject(self.textFieldSubject.text!)
+//        mailComposeVC.setMessageBody(self.textViewBody.text!, isHTML: false)
         mailComposeVC.mailComposeDelegate = self
-        mailComposeVC.setToRecipients([self.textFieldTo.text!])
-        mailComposeVC.setSubject(self.textFieldSubject.text!)
-        mailComposeVC.setMessageBody(self.textViewBody.text!, isHTML: false)
-        mailComposeVC.mailComposeDelegate = self
-        mailComposeVC.setToRecipients(["RL200485@stu.rlas-116.org"])
-        mailComposeVC.setSubject("Sending you an in-app e-mail...")
-        mailComposeVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
+//        mailComposeVC.setToRecipients(["RL200485@stu.rlas-116.org"])
+//        mailComposeVC.setSubject("Sending you an in-app e-mail...")
+//        mailComposeVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
         if MFMailComposeViewController.canSendMail(){
             self.present(mailComposeViewController, animated: true, completion: nil)
             
