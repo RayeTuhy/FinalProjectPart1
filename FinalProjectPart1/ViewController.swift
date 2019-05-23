@@ -41,7 +41,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     func configureMailComposer() -> MFMailComposeViewController{
         let mailComposeVC = MFMailComposeViewController()
-        mailComposeVC.mailComposeDelegate = self
+        //mailComposeVC.mailComposeDelegate = self
         mailComposeVC.setToRecipients([self.textFieldTo.text!])
         mailComposeVC.setSubject(self.textFieldSubject.text!)
         mailComposeVC.setMessageBody(self.textViewBody.text!, isHTML: false)

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="06C-Zc-X7m">
             <objects>
-                <viewController id="dao-ph-hOg" sceneMemberID="viewController">
+                <viewController id="dao-ph-hOg" customClass="FirstViewController" customModule="FinalProjectPart1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zdh-Eu-S4S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,16 +41,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwn-QE-cln" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="o6h-fw-h6x">
                     <connections>
+                        <action selector="onTap:" destination="dao-ph-hOg" id="GG1-fk-JIb"/>
                         <segue destination="9Xv-u8-Gvd" kind="show" id="HPt-Lr-7tI"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1127" y="115"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="M7A-y4-ybg">
             <objects>
-                <viewController id="9Xv-u8-Gvd" sceneMemberID="viewController">
+                <viewController id="9Xv-u8-Gvd" customClass="SecondViewController" customModule="FinalProjectPart1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uok-sX-aQe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwM-5V-KKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-206" y="115"/>
+            <point key="canvasLocation" x="-148" y="115"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
